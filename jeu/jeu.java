@@ -13,6 +13,7 @@ public class jeu {
 
         String motAleatoire = liste.motus.get(random.nextInt(liste.motus.size()));
         System.out.println("Mot choisi : " + "Mystere");
+        System.out.println("La première lettre est : " + motAleatoire.charAt(0));
 
         boolean motTrouve = false;
         int tentatives = 6;
