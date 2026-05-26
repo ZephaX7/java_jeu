@@ -1,42 +1,27 @@
 import java.util.Scanner;
 
-public class menu{
-
+public class menu {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Bienvenue dans le menu du jeu !");
 
-        Scanner scanner = new Scanner(System.in);
+        System.out.println(" ");
+        System.out.println("1. Jouer");
+        System.out.println("2. Quitter");
+        System.out.println(" ");
 
-        boolean jeuEnCours = true;
-
-       
-        System.out.println("=== Bienvenue dans le jeu ===");
-
+        System.out.println("Veillez saisir quelque chose :");
+        System.out.println(" ");
+        String reponse = sc.nextLine();
         
-        while (jeuEnCours) {
+        switch (reponse) {
+            case "1":
+                System.out.println("Bon jeu !");
+                break;
 
-            System.out.println("1 - Jouer :");
-            System.out.println("2 - Quitter");
-
-            
-            String choix = scanner.nextLine();
-
-           
-            switch (choix) {
-
-                case "1":
-                    System.out.println("Bonne chance !");
-                    
-
-                case "2":
-                    jeuEnCours = false;
-                    break;
-
-                default:
-                    System.out.println("Commande inconnue.");
-            }
+            case "2":
+                System.out.println("Au revoir !");
+                break;
         }
-
-       
-        scanner.close();
     }
 }
