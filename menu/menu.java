@@ -9,25 +9,17 @@ public class menu {
 
         while (continuer) {
 
-        System.out.println("Bienvenue dans le menu du jeu !");
+            System.out.println("Bienvenue dans le menu du jeu !");
 
-        System.out.println(" ");
-        System.out.println("1. Jouer");
-        System.out.println("2. Regles du jeu");
-        System.out.println("3. Quitter");
-        System.out.println(" ");
+            System.out.println(" ");
+            System.out.println("1. Jouer");
+            System.out.println("2. Regles du jeu");
+            System.out.println("3. Quitter");
+            System.out.println(" ");
 
-        System.out.println("Veillez saisir quelque chose :");
-        System.out.println(" ");
-        String reponse = sc.nextLine();
-<<<<<<< HEAD
-
-        switch (reponse) {
-            case "1":
-                System.out.println("Bon jeu !");
-                break;
-=======
->>>>>>> a6787febbb8ea3ace9b006649fecc6e713665528
+            System.out.println("Veillez saisir quelque chose :");
+            System.out.println(" ");
+            String reponse = sc.nextLine();
 
             switch (reponse) {
                 case "1":
