@@ -1,4 +1,7 @@
+package menu;
+
 import java.util.Scanner;
+import jeu.jeu;
 
 public class menu {
     public static void main(String[] args) {
@@ -23,6 +26,7 @@ public class menu {
                 case "1":
                     System.out.println("Bon jeu !");
                     System.out.println(" ");
+                    jeu.main(null);
                     break;
 
                 case "2":
