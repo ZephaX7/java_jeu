@@ -28,6 +28,7 @@ public class menu {
                     System.out.println("Bon jeu !");
                     System.out.println(" ");
                     jeu.main(null);
+                    continuer = false;
                     break;
 
                 case "2":
