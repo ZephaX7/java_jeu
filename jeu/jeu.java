@@ -1,5 +1,6 @@
 package jeu;
 
+import listemot.listemot;
 import java.util.Random;
 import java.util.Scanner;
 
