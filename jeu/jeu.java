@@ -12,7 +12,7 @@ public class jeu {
         Random random = new Random();
 
         String motAleatoire = liste.motus.get(random.nextInt(liste.motus.size()));
-        System.out.println("Mot choisi : " + motAleatoire);
+        System.out.println("Mot choisi : " + "Mystere");
 
         boolean motTrouve = false;
         int tentatives = 6;
@@ -24,6 +24,8 @@ public class jeu {
             if (choix.equals(motAleatoire)) {
                 System.out.println("Bravo, vous avez trouvé !");
                 motTrouve = true;
+                break;
+
             } else {
                 tentatives--;
                 System.out.println("Mauvaise réponse. Tentatives restantes : " + tentatives);
@@ -33,7 +35,6 @@ public class jeu {
         if (!motTrouve) {
             System.out.println("Perdu ! Le mot était : " + motAleatoire);
         }
-
         sc.close();
     }
 }
