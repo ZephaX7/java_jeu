@@ -1,6 +1,8 @@
+
 import java.util.Scanner;
 
 public class menu {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bienvenue dans le menu du jeu !");
@@ -13,7 +15,7 @@ public class menu {
         System.out.println("Veillez saisir quelque chose :");
         System.out.println(" ");
         String reponse = sc.nextLine();
-        
+
         switch (reponse) {
             case "1":
                 System.out.println("Bon jeu !");
